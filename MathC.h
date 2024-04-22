@@ -1,4 +1,4 @@
-// Copyright Eric Chauvin 2022
+// Copyright Eric Chauvin 2022 - 2024.
 
 
 
@@ -30,6 +30,7 @@ class MathC
   static Int64 roundI64( Float64 x );
   static Int32 roundI32( Float64 x );
   static Float64 sqroot( Float64 x );
+  static Float64 exp( Float64 x );
 
 
   };

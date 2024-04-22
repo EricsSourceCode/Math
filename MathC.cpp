@@ -1,4 +1,4 @@
-// Copyright Eric Chauvin 2022
+// Copyright Eric Chauvin 2022 - 2024.
 
 
 
@@ -6,6 +6,10 @@
 // Public License (GPL).  It is the
 // same license that Linux has.
 // https://www.gnu.org/licenses/gpl-3.0.html
+
+
+
+// See list on bottom.
 
 
 
@@ -17,8 +21,6 @@
 // under other include files.
 #include <cmath>
 
-
-// Linux has a long double but not Windows?
 
 
 Float64 MathC::sqroot( Float64 x )
@@ -42,6 +44,17 @@ Int32 MathC::roundI32( Float64 x )
 {
 return Casting::i64ToI32( std::lround( x ));
 }
+
+
+Float64 MathC::exp( Float64 x )
+{
+// This is e to the x.
+return std::exp( x );
+}
+
+
+// pow() base raised to power.
+// https://cplusplus.com/reference/cmath/pow/
 
 
 
